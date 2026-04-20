@@ -16,6 +16,14 @@ if (toggle && menu) {
   });
 }
 
+// Assemble obfuscated email links at runtime
+document.querySelectorAll('a.email-link[data-u][data-d]').forEach(a => {
+  const addr = a.dataset.u + '@' + a.dataset.d;
+  a.href = 'mailto:' + addr;
+  const span = a.querySelector('.email-text');
+  if (span) span.textContent = addr;
+});
+
 // Mark active nav link
 document.querySelectorAll('.nav-links a').forEach(a => {
   if (a.href === location.href || location.pathname.startsWith(new URL(a.href).pathname) && a.href !== '/') {
