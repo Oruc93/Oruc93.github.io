@@ -43,7 +43,12 @@
 
       <div class="page-header">
         <h1>Curriculum Vitae</h1>
-        <p class="subtitle">Oruç Kahriman &mdash; Berlin, Germany &mdash; <a href="mailto:oruc.kahriman@charite.de">oruc.kahriman@charite.de</a></p>
+        <p class="subtitle">
+          Oruç Kahriman &mdash; Berlin, Germany &mdash;
+          <a class="email-link" data-u="oruc.kahriman" data-d="charite.de"><span class="email-text"></span></a> &mdash;
+          <a href="https://github.com/Oruc93" target="_blank" rel="noopener">GitHub</a> &mdash;
+          <a href="https://www.linkedin.com/in/oruc-kahriman-931b56122/" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
         <p class="cv-download" style="margin-top:0.75rem;">
           <!-- TODO: add PDF export link once generated -->
           <!-- <a href="assets/kahriman-cv.pdf">Download PDF ↓</a> -->
@@ -68,11 +73,34 @@
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <span class="cv-entry-title"><!-- TODO: degree name, e.g. B.Sc. / M.Sc. Physics --></span>
-            <span class="cv-entry-date"><!-- TODO: years --></span>
+            <span class="cv-entry-title">M.Sc. Physics</span>
+            <span class="cv-entry-date">2015 — 2023</span>
           </div>
-          <div class="cv-entry-org"><!-- TODO: university --></div>
-          <p class="cv-entry-desc"><!-- TODO: brief description --></p>
+          <div class="cv-entry-org">Humboldt-Universität zu Berlin</div>
+          <p class="cv-entry-desc">
+            Specialisation in Macromolecules and Complex Systems. Thesis: <em>Eignung von rekurrenten
+            Deep Learning Methoden zur Analyse von Biosignalen</em>, AG Cardiovascular Physics.
+          </p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">B.Sc. Physics</span>
+            <span class="cv-entry-date">2012 — 2016</span>
+          </div>
+          <div class="cv-entry-org">Humboldt-Universität zu Berlin</div>
+          <p class="cv-entry-desc">
+            Thesis: <em>Untersuchungen zum Dotieren von Poly(3-hexylthiophen-2,5-diyl) am Beispiel
+            eines organischen und eines anorganischen Akzeptors</em>, AG Supramolecular Systems.
+          </p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Allgemeine Hochschulreife</span>
+            <span class="cv-entry-date">2005 — 2012</span>
+          </div>
+          <div class="cv-entry-org">Paulsen Gymnasium, Berlin</div>
         </div>
       </section>
 
@@ -82,20 +110,125 @@
 
         <div class="cv-entry">
           <div class="cv-entry-header">
+            <span class="cv-entry-title">Junior Data Scientist</span>
+            <span class="cv-entry-date">01/2024 — present</span>
+          </div>
+          <div class="cv-entry-org">eze.network GmbH, Munich</div>
+          <p class="cv-entry-desc">
+            Anomaly detection on EV charging station data: meter-jump analysis, POWER METER FAILURE
+            pattern investigation, correlation between log histories and station outages, and timeout
+            clustering.
+          </p>
+          <p class="cv-entry-desc">
+            Developed the Status Cycle metric — a silent-fault indicator for chargers oscillating
+            spontaneously between AVAILABLE and PREPARING states without issuing an error. Built a
+            Grafana monitoring dashboard (CDR Gap, Status Cycle, WEAK SIGNAL, error alerts) across
+            all stations with automated Zammad ticket dispatch and per-station time-series views.
+          </p>
+          <p class="cv-entry-desc">
+            Extended the GIS plugin with municipal boundaries, public on-street parking, and Census
+            2022 data. Delivered ATLAS, a next-generation GIS PoC for expansion potential analysis
+            (Leipzig pilot). Led a Smart City Systems sensor test as project manager, integrating the
+            device via the ParkingPilot API.
+          </p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
             <span class="cv-entry-title">Data Scientist</span>
             <span class="cv-entry-date">2022 — present</span>
           </div>
           <div class="cv-entry-org">ID Information und Dokumentation Berlin GmbH</div>
           <p class="cv-entry-desc">
-            Research team member on the TRANSFER project. Building a data platform to analyse
-            intraoperative monitoring streams sourced from operating rooms. Developing and evaluating
-            ML models for near-real-time hypotension prediction with event-type and causal
-            information. Working across signal preprocessing, feature engineering, model development,
-            and MLOps infrastructure.
+            Research data scientist on the TRANSFER project — an end-to-end ML system for
+            intraoperative patient monitoring. Built the data infrastructure: ingesting OR time-series
+            streams via Kafka, persisting to TimeScaleDB and a FHIR store, running preprocessing and
+            inference through a Triton Model Server, and deploying all modules as Docker containers.
+            Involved in neural network architecture design, model training, and evaluation on clinical
+            datasets for near-real-time hypotension prediction.
+          </p>
+          <p class="cv-entry-desc">
+            Developed Revenue Group Predictor — a Python REST webservice returning probability
+            distributions over patient length-of-stay intervals.
           </p>
         </div>
 
-        <!-- TODO: add previous roles -->
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Business Development Manager</span>
+            <span class="cv-entry-date">02/2023 — 12/2023</span>
+          </div>
+          <div class="cv-entry-org">eze.network GmbH, Munich</div>
+          <p class="cv-entry-desc">
+            Sole developer of a PyQGIS/PyQt GIS plugin for EV charging site scouting, integrating
+            OpenStreetMap and LEMNET; first version deployed in three weeks. Scouted ~200 potential
+            locations in 6 months with an 80% permit approval rate. Co-managed permit applications,
+            exceeding the 160-station target (170 secured, 25% of Berlin's total allocation).
+            Monitored construction projects (~€12,000 budget each) and commissioned and maintained 22
+            charging stations.
+          </p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Research Assistant</span>
+            <span class="cv-entry-date">10/2022 — 01/2023</span>
+          </div>
+          <div class="cv-entry-org">Humboldt-Universität zu Berlin</div>
+          <p class="cv-entry-desc">
+            Supported a BGM study (Deloitte collaboration): participant management, ECG device
+            logistics, and data collection for 60 participants over two 24 h recordings each.
+          </p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Head of Operations</span>
+            <span class="cv-entry-date">03/2020 — 01/2023</span>
+          </div>
+          <div class="cv-entry-org">Sonne &amp; Grün GmbH, Berlin</div>
+          <p class="cv-entry-desc">
+            Led operations for outdoor construction, landscaping, removals, and winter services.
+            Managed ~15 client accounts (Vonovia, Covivio, and others), coordinated teams of up to
+            20, and oversaw procurement, project closure, and bookkeeping (~€1.8M annual revenue).
+          </p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Office Administrator</span>
+            <span class="cv-entry-date">10/2021 — 09/2022</span>
+          </div>
+          <div class="cv-entry-org">Büsing Immobilien, Berlin</div>
+          <p class="cv-entry-desc">
+            Tenant relations for 86 residential units; bookkeeping (~€750K annual revenue).
+          </p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Research Assistant</span>
+            <span class="cv-entry-date">08/2018 — 03/2020</span>
+          </div>
+          <div class="cv-entry-org">Humboldt-Universität zu Berlin</div>
+          <p class="cv-entry-desc">
+            Lab assistant at AG Physik von Makromolekülen: experiment execution, chemistry lab work,
+            and electron microscopy.
+          </p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Working Student</span>
+            <span class="cv-entry-date">01/2017 — 08/2018</span>
+          </div>
+          <div class="cv-entry-org">engage — Key Technology Ventures AG, Berlin</div>
+          <p class="cv-entry-desc">
+            EU-wide consultant acquisition for the e-Health Hub; onboarded 120 consultants from
+            all EU member states.
+          </p>
+        </div>
+
       </section>
 
       <!-- Projects -->
@@ -147,6 +280,12 @@
           <span class="cv-skill">Machine Learning</span>
           <span class="cv-skill">Signal Processing</span>
           <span class="cv-skill">MLOps</span>
+          <span class="cv-skill">Kafka</span>
+          <span class="cv-skill">TimeScaleDB</span>
+          <span class="cv-skill">FHIR</span>
+          <span class="cv-skill">Triton Inference Server</span>
+          <span class="cv-skill">Docker</span>
+          <span class="cv-skill">Grafana</span>
           <span class="cv-skill">Firebase / GCP</span>
           <span class="cv-skill">LLM tooling</span>
           <span class="cv-skill">Agentic AI</span>
@@ -172,9 +311,15 @@
       <span>&copy; 2025 Oruç Kahriman</span>
       <ul class="footer-links">
         <li>
+<<<<<<< HEAD
           <a href="mailto:oruc.kahriman@charite.de" aria-label="Email">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             oruc.kahriman@charite.de
+=======
+          <a class="email-link" data-u="oruc.kahriman" data-d="charite.de" aria-label="Email">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span class="email-text"></span>
+>>>>>>> 04fa17e (feat: CV page — full content, experience history, correct LinkedIn URL)
           </a>
         </li>
         <li>
@@ -184,7 +329,7 @@
           </a>
         </li>
         <li>
-          <a href="https://linkedin.com/in/oruc-kahriman" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/oruc-kahriman-931b56122/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             LinkedIn
           </a>
