@@ -1,0 +1,50 @@
+References for future blog posts
+=================================
+Source: removed from bibliography.html on 2026-04-20
+Use these as inline citations or a "References" section at the end of blog post .md files.
+
+-- Medical device regulation --
+
+European Parliament and Council. 2017. Regulation (EU) 2017/745 on medical devices (MDR). Official Journal of the European Union.
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32017R0745
+
+Medical Device Coordination Group (MDCG). 2019 (rev. June 2025). MDCG 2019-11: Guidance on Qualification and Classification of Software in Regulation (EU) 2017/745 and Regulation (EU) 2017/746. European Commission.
+https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en
+
+International Electrotechnical Commission. 2006. IEC 62304: Medical device software — Software life cycle processes. IEC.
+https://www.iso.org/standard/38421.html
+
+International Electrotechnical Commission. 2015. IEC 62366-1: Medical devices — Application of usability engineering to medical devices. IEC.
+https://www.iso.org/standard/73007.html
+
+International Organization for Standardization. 2016. ISO 13485: Medical devices — Quality management systems — Requirements for regulatory purposes. ISO.
+https://www.iso.org/standard/59752.html
+
+International Organization for Standardization. 2019. ISO 14971: Medical devices — Application of risk management to medical devices. ISO.
+https://www.iso.org/standard/72704.html
+
+-- Data protection --
+
+European Parliament and Council. 2016. Regulation (EU) 2016/679 — General Data Protection Regulation (GDPR), Article 9: Processing of special categories of personal data. Official Journal of the European Union.
+https://gdpr-info.eu/art-9-gdpr/
+
+European Parliament and Council. 2016. GDPR Article 35: Data protection impact assessment. Official Journal of the European Union.
+https://gdpr-info.eu/art-35-gdpr/
+
+-- AI regulation --
+
+European Parliament and Council. 2024. Regulation (EU) 2024/1689 — EU Artificial Intelligence Act (Article 3, Article 6, Recital 12). Official Journal of the European Union.
+
+European Commission. February 2025. Commission guidelines on the definition of an AI system under the EU AI Act. European Commission.
+
+-- CE marking --
+
+European Commission. CE marking — Single Market Economy.
+https://single-market-economy.ec.europa.eu/single-market/ce-marking_en
+
+European Commission. Notified Bodies — Medical Devices. European Health Union.
+https://health.ec.europa.eu/medical-devices-topics-interest/notified-bodies_en
+
+-- Further reading --
+
+(to be populated)
