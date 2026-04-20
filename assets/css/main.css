@@ -285,6 +285,21 @@ figcaption {
 .hero {
   padding: 4rem 0 3rem;
 }
+.hero-layout {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+.hero-portrait {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+}
+.hero-text { flex: 1; }
 .hero-name {
   font-family: var(--font-sans);
   font-size: 2.25rem;
@@ -571,6 +586,7 @@ main { flex: 1; padding-bottom: 4rem; }
   .nav-toggle { display: flex; align-items: center; }
 
   .hero { padding: 2.5rem 0 2rem; }
+  .hero-layout { flex-direction: column; align-items: center; text-align: center; }
   .hero-name { font-size: 1.75rem; }
 
   .focus-grid { grid-template-columns: 1fr; }
