@@ -275,7 +275,7 @@ figcaption {
   margin-bottom: 2.5rem;
 }
 .page-header h1 { margin-bottom: 0.35rem; }
-.page-header .subtitle {
+.subtitle {
   font-family: var(--font-sans);
   font-size: 1rem;
   color: var(--text-muted);
