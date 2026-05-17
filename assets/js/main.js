@@ -24,6 +24,14 @@ document.querySelectorAll('a.email-link[data-u][data-d]').forEach(a => {
   if (span) span.textContent = addr;
 });
 
+// Assemble obfuscated phone links at runtime
+document.querySelectorAll('a.phone-link[data-cc][data-p][data-n]').forEach(a => {
+  const num = a.dataset.cc + ' ' + a.dataset.p + ' ' + a.dataset.n;
+  a.href = 'tel:' + a.dataset.cc + a.dataset.p + a.dataset.n;
+  const span = a.querySelector('.phone-text');
+  if (span) span.textContent = num;
+});
+
 // Mark active nav link
 document.querySelectorAll('.nav-links a').forEach(a => {
   if (a.href === location.href || location.pathname.startsWith(new URL(a.href).pathname) && a.href !== '/') {
