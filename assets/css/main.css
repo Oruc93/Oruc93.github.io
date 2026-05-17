@@ -529,6 +529,17 @@ main { flex: 1; padding-bottom: 4rem; }
 .post-body ol { margin-bottom: 1.25rem; }
 .post-body li { margin-bottom: 0.25rem; }
 
+/* ── Author note (post footer aside) ───────────────────────── */
+.post-author-note {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-family: var(--font-sans);
+}
+
 /* ── Bibliography ───────────────────────────────────────────── */
 .bib-section { margin-bottom: 3rem; }
 .bib-section h2 {

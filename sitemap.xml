@@ -4,5 +4,6 @@
   <url><loc>https://kahriman.org/cv.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kahriman.org/projects.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kahriman.org/blog/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kahriman.org/blog/malik-regulatory.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kahriman.org/bibliography.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
