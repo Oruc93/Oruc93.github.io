@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV — Oruç Kahriman</title>
-  <meta name="description" content="Curriculum vitae of Oruç Kahriman — Medical AI researcher and data scientist based in Berlin.">
+  <meta name="description" content="Curriculum vitae of Oruç Kahriman — AI/ML engineer building production ML pipelines and LLM tooling for medical AI, based in Berlin.">
   <meta name="author" content="Oruç Kahriman">
   <meta property="og:title"       content="CV — Oruç Kahriman">
-  <meta property="og:description" content="Education, experience, and skills of Oruç Kahriman.">
+  <meta property="og:description" content="ML engineering, MLOps, and agentic AI tooling for medical AI — experience and skills of Oruç Kahriman.">
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://kahriman.org/cv.html">
   <meta property="og:image"       content="https://kahriman.org/images/portrait.jpeg">
   <meta name="twitter:card"       content="summary">
   <meta name="twitter:title"      content="CV — Oruç Kahriman">
-  <meta name="twitter:description" content="Education, experience, and skills of Oruç Kahriman.">
+  <meta name="twitter:description" content="ML engineering, MLOps, and agentic AI tooling for medical AI — experience and skills of Oruç Kahriman.">
   <meta name="twitter:image"      content="https://kahriman.org/images/portrait.jpeg">
   <link rel="canonical"           href="https://kahriman.org/cv.html">
   <link rel="icon" href="favicon.ico" sizes="any">
@@ -51,7 +51,8 @@
           Oruç Kahriman &mdash; Berlin, Germany &mdash;
           <a class="email-link" data-u="oruc.kahriman" data-d="charite.de"><span class="email-text"></span></a> &mdash;
           <a href="https://github.com/Oruc93" target="_blank" rel="noopener">GitHub</a> &mdash;
-          <a href="https://www.linkedin.com/in/oruc-kahriman-931b56122/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/oruc-kahriman-931b56122/" target="_blank" rel="noopener">LinkedIn</a> &mdash;
+          <a href="bibliography.html">Publications</a>
         </p>
         <p class="cv-download" style="margin-top:0.75rem;">
           <a href="assets/kahriman-cv.pdf" class="btn btn-secondary">Download PDF ↓</a>
@@ -122,12 +123,25 @@
             intraoperative patient monitoring. Built the data infrastructure: ingesting OR time-series
             streams via Kafka, persisting to TimeScaleDB and a FHIR store, running preprocessing and
             inference through a Triton Model Server, and deploying all modules as Docker containers.
-            Involved in neural network architecture design, model training, and evaluation on clinical
-            datasets for near-real-time hypotension prediction.
+            Designed and trained neural network models for near-real-time intraoperative hypotension
+            prediction across multiple severity classes, plus statistical clustering and rule-based
+            classification for hemodynamic endotypes. Preliminary models trained on the ~6,000-case
+            VitalDB public dataset, scaling to an incoming ~300,000-case Charité clinical cohort.
           </p>
           <p class="cv-entry-desc">
             Developed Revenue Group Predictor — a Python REST webservice returning probability
-            distributions over patient length-of-stay intervals.
+            distributions over patient length-of-stay intervals. Refactored the text-transform and
+            preprocessing pipeline, retrained the model on a ~10M-record dataset, and migrated model
+            serving to ONNX.
+          </p>
+          <p class="cv-entry-desc">
+            De facto go-to person for AI/LLM tooling across the company: leading the rollout of an
+            internal OpenWebUI-based LLM service (in progress) with a token-usage monitoring dashboard,
+            and evaluating AI developer tooling for org-wide adoption — including Claude Code,
+            OpenCode, the <code>uv</code> Python package manager, and open-source MCP servers connecting
+            agents to Jira, Confluence, and a self-hosted TFS instance. Designed and delivered internal
+            AI training sessions (60&ndash;80 attendees per session, ~100 of 120 colleagues reached) and
+            mentors colleagues adopting these tools.
           </p>
         </div>
 
@@ -256,7 +270,9 @@
           </div>
           <p class="cv-entry-desc">
             SKU product lifecycle management tool. Manages the full lifecycle of product stock
-            units from creation through end-of-life using structured LLM-assisted workflows.
+            units from creation through end-of-life using structured LLM-assisted workflows. Agentic
+            LLM component queries supplier and compatibility databases via tool use to autonomously
+            improve component suggestions to the user.
           </p>
         </div>
       </section>
