@@ -258,6 +258,18 @@ figcaption {
   margin-right: auto;
   line-height: 1.5;
 }
+/* Two phone screenshots side by side (stack on mobile) */
+.figure-pair {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.figure-pair figure {
+  flex: 0 1 300px;
+  margin: 0;
+}
 
 /* ── Layout utilities ───────────────────────────────────────── */
 .container {
@@ -407,7 +419,7 @@ figcaption {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
   border: 3px solid var(--bg);
   box-shadow: 0 0 0 1px var(--border), 4px 6px 0 0 color-mix(in srgb, var(--accent-warm) 55%, transparent);
   transform: rotate(-3deg);
@@ -728,6 +740,8 @@ main { flex: 1; padding-bottom: 4rem; }
   .hero { padding: 2.5rem 0 2rem; }
   .hero-layout { flex-direction: column; align-items: center; text-align: center; }
   .hero-portrait { transform: none; margin-bottom: 1rem; }
+  .figure-pair { flex-direction: column; align-items: center; }
+  .figure-pair figure { flex: none; width: 100%; max-width: 300px; }
   .hero-name { font-size: 2rem; }
 
   .focus-grid { grid-template-columns: 1fr; }

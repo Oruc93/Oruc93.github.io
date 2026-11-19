@@ -1,0 +1,15 @@
+# Jekyll build config for GitHub Pages.
+# The site is plain HTML without front matter, so pages are copied as-is.
+# This file only keeps internal/non-site files out of the published build.
+exclude:
+  - CLAUDE.md
+  - CONTEXT.md
+  - README.md
+  - note.txt
+  - post.md
+  - docs/
+  - .dual-graph/
+  - .claude/
+  - .gitignore
+  - _notes.txt
+  - _scripts.md

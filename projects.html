@@ -75,16 +75,18 @@
                alt="Malik app system architecture diagram showing data flow from Polar H10 through BLE to Flutter app and Firebase backend">
           <figcaption>System architecture: Polar H10 → BLE → Flutter app → Firebase backend → signal processing pipeline.</figcaption>
         </figure>
+        <div class="figure-pair">
         <figure>
-          <img src="images/screenshot-measurement-mock.png"
+          <img src="images/screenshot-measurement-mock.png" width="300" height="533"
                alt="Malik app measurement screen showing a live ECG waveform during a recording session">
           <figcaption>Measurement screen: live ECG trace streamed from the Polar H10 chest strap.</figcaption>
         </figure>
         <figure>
-          <img src="images/screenshot-results-mock.png"
+          <img src="images/screenshot-results-mock.png" width="300" height="533"
                alt="Malik app results screen showing calculated HRV metrics and cardiac parameters">
           <figcaption>Results screen: HRV and cardiac parameters computed after session upload.</figcaption>
         </figure>
+        </div>
       </article>
 
       <hr>
@@ -94,7 +96,7 @@
         <h2>TRANSFER</h2>
         <div class="tags" style="margin-bottom: 1rem;">
           <span class="tag">Kafka</span>
-          <span class="tag">TimeScaleDB</span>
+          <span class="tag">TimescaleDB</span>
           <span class="tag">FHIR</span>
           <span class="tag">Triton</span>
           <span class="tag">Docker</span>
@@ -103,10 +105,10 @@
         </div>
         <p>
           An end-to-end ML system for near-real-time intraoperative hypotension prediction built at
-          ID&nbsp;Information und Dokumentation Berlin GmbH as part of a doctoral research project
+          ID&nbsp;Information und Dokumentation im Gesundheitswesen GmbH &amp; Co.&nbsp;KGaA as part of a doctoral research project
           at Charité Universitätsmedizin Berlin. OR time-series streams are ingested via Kafka and
-          persisted to both TimeScaleDB and a FHIR store. A preprocessing and inference pipeline runs
-          through a Triton Model Server, with all components deployed as Docker containers.
+          persisted to both TimescaleDB and a FHIR store. A preprocessing and inference pipeline runs
+          through a Triton Inference Server, with all components deployed as Docker containers.
         </p>
         <p>
           <a href="https://www.transfer-project.healthcare/de" target="_blank" rel="noopener" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.4rem;">

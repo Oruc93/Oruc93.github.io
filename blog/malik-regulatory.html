@@ -95,7 +95,7 @@
 
         <p>Before I get into the architecture, let me address the question I would have asked reading a post like this: why does any of this apply to me?</p>
 
-        <p>You do not choose whether your software is a medical device. The intended use does. The moment your software makes a claim directed at a clinical decision, detecting a condition, supporting a diagnosis, informing treatment, it enters medical device territory under the EU <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32017R0745">Medical Device Regulation (MDR)</a> regardless of what you call it or how you distribute it. A fitness app that shows heart rate is not a medical device. An app that displays cardiac parameters to a physician assessing heart health probably is. The code can be identical. The claim is what changes the classification.</p>
+        <p>You do not choose whether your software is a medical device. The intended use does. The moment your software makes a claim directed at a clinical decision - detecting a condition, supporting a diagnosis, informing treatment - it enters medical device territory under the EU <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32017R0745">Medical Device Regulation (MDR)</a> regardless of what you call it or how you distribute it. A fitness app that shows heart rate is not a medical device. An app that displays cardiac parameters to a physician assessing heart health probably is. The code can be identical. The claim is what changes the classification.</p>
 
         <p>Ignorance is not a defense. Understanding where the regulatory boundary sits is what lets you make a deliberate choice about which side of it you want to be on.</p>
 
@@ -127,7 +127,7 @@
 
         <h3>What risk class?</h3>
 
-        <p><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32017R0745">Rule 11 of MDR Annex VIII</a> is the classification rule that most standalone decision-support software falls under. It is not the <em>only</em> rule that can apply to software, software that drives or influences another active device inherits that device&#8217;s rule, but for an app like Malik, Rule 11 is the relevant one. It has three sub-rules, each mapping to a different risk class.</p>
+        <p><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32017R0745">Rule 11 of MDR Annex VIII</a> is the classification rule that most standalone decision-support software falls under. It is not the <em>only</em> rule that can apply to software (software that drives or influences another active device inherits that device&#8217;s rule), but for an app like Malik, Rule 11 is the relevant one. It has three sub-rules, each mapping to a different risk class.</p>
 
         <p>Sub-rule 11a covers software that provides information used in diagnostic or therapeutic decisions. That is Malik. The physician uses cardiac parameters to assess heart health, which is diagnostic decision support. Class IIa.</p>
 
@@ -182,7 +182,7 @@
 
         <p>For a CE-marked medical device headed for market the answer gets more complicated. A notified body examining your technical file will ask where exactly the data is stored, who has access, what happens during a Google infrastructure update, how you guarantee data integrity, and what your recovery procedures are. With Firebase, many of those answers are &#8220;Google controls that, and I rely on their terms.&#8221; That is not a disqualifier, but it creates a dependency that is harder to document and defend than infrastructure you fully control.</p>
 
-        <p>EU-hosted alternatives like AWS Frankfurt, Azure Germany, or specialized medical cloud providers give you direct control over the processing environment and cleaner answers for auditors. Every architecture choice you make will need to be explained and defended in your technical file. Infrastructure is not just an engineering decision.</p>
+        <p>EU-hosted alternatives like AWS Frankfurt, Azure Germany West Central, or specialized medical cloud providers give you direct control over the processing environment and cleaner answers for auditors. Every architecture choice you make will need to be explained and defended in your technical file. Infrastructure is not just an engineering decision.</p>
 
         <h3>What to check if you are already on Firebase</h3>
 
@@ -202,7 +202,7 @@
 
         <figure>
           <img src="../images/screenshot-results-mock.png" alt="Malik results overview" width="300">
-          <figcaption>Measurement results as seen by the physician. The Health Score provides an at-a-glance assessment, while detailed HRV metrics (RMSSD, SDNN, pNN50) and cardiac morphology parameters (QRS duration, QT interval, cropped out) support clinical decision-making. This is the interface that MDR Annex I requires instructions for use to accompany.</figcaption>
+          <figcaption>Measurement results as seen by the physician. The Health Score provides an at-a-glance assessment, while detailed HRV metrics (RMSSD, SDNN, pNN50) and cardiac morphology parameters (QRS duration, QT interval; not shown in this crop) support clinical decision-making. This is the interface that MDR Annex I requires instructions for use to accompany.</figcaption>
         </figure>
 
         <p>There is one intended user: the physician. One interface. One device. The physician interprets the cardiac parameters directly and in the presence of the patient. There is no unsupervised patient interaction with clinical data, no remote transmission of results, and no automated alert that a patient receives alone at home.</p>
@@ -287,7 +287,7 @@
         <p>The path requires knowing where the boundaries are before you write the code, not after. If this walkthrough helps one developer ask the right questions earlier, it was worth writing.</p>
 
         <aside class="post-author-note">
-          <p>I am a physicist turned data scientist, currently working in medical device software and finishing a PhD in biosignal data analysis. I plan to write more about the intersection of modern development practices and medical device regulation, including what happens when you add machine learning to a pipeline like this, and what &#8220;vibe coding&#8221; means for IEC 62304 traceability. If you are building something similar, I would like to hear about it.</p>
+          <p>I am a physicist turned data scientist, currently working in medical device software and pursuing a PhD in biosignal data analysis. I plan to write more about the intersection of modern development practices and medical device regulation, including what happens when you add machine learning to a pipeline like this, and what &#8220;vibe coding&#8221; means for IEC 62304 traceability. If you are building something similar, I would like to hear about it.</p>
         </aside>
 
       </article>
